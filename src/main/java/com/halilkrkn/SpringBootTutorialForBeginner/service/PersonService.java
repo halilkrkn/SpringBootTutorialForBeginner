@@ -19,7 +19,7 @@ public class PersonService {
     // Burada @Qualifier("fakeDao") ile hangi dao kullanılacaksa onu belirtiyoruz.
     // @Qualifier("fakeDao") ile @Repository("fakeDao") ile belirttiğimiz dao kullanılıyor.
     @Autowired
-    public PersonService(@Qualifier("fakeDao") PersonDao personDao) {
+    public PersonService(@Qualifier("postgresDao") PersonDao personDao) {
         this.personDao = personDao;
     }
 
